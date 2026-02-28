@@ -78,3 +78,5 @@ graph TD
 
 ---
 Built with ❤️ by [Your Name]
+
+#java23 #spring-ai #ollama #multimodal #videosearch #nvidia #high-performance-java
