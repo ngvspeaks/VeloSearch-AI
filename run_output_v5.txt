@@ -1,0 +1,130 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.veloindex:velo-index >----------------------
+[INFO] Building velo-index 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.0:clean (default-clean) @ velo-index ---
+[INFO] Deleting C:\Users\NIBIN G VARGHESE\.gemini\antigravity\scratch\velo-index\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ velo-index ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ velo-index ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 6 source files with javac [debug parameters release 23] to target\classes
+[INFO] 
+[INFO] >>> spring-boot:3.4.0:run (default-cli) > test-compile @ velo-index >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ velo-index ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ velo-index ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ velo-index ---
+[INFO] skip non existing resourceDirectory C:\Users\NIBIN G VARGHESE\.gemini\antigravity\scratch\velo-index\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ velo-index ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.4.0:run (default-cli) < test-compile @ velo-index <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.0:run (default-cli) @ velo-index ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-02-28T10:55:38.398+05:30  INFO 16544 --- [velo-index] [           main] com.veloindex.VeloIndexApplication       : Starting VeloIndexApplication using Java 23.0.1 with PID 16544 (C:\Users\NIBIN G VARGHESE\.gemini\antigravity\scratch\velo-index\target\classes started by NIBIN G VARGHESE in C:\Users\NIBIN G VARGHESE\.gemini\antigravity\scratch\velo-index)
+2026-02-28T10:55:38.400+05:30  INFO 16544 --- [velo-index] [           main] com.veloindex.VeloIndexApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-02-28T10:55:39.403+05:30  INFO 16544 --- [velo-index] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-28T10:55:39.414+05:30  INFO 16544 --- [velo-index] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-28T10:55:39.415+05:30  INFO 16544 --- [velo-index] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-02-28T10:55:39.465+05:30  INFO 16544 --- [velo-index] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-28T10:55:39.467+05:30  INFO 16544 --- [velo-index] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1021 ms
+2026-02-28T10:55:40.000+05:30  INFO 16544 --- [velo-index] [           main] o.s.ai.vectorstore.PgVectorStore         : Using the vector table name: vector_store. Is empty: false
+2026-02-28T10:55:40.003+05:30  INFO 16544 --- [velo-index] [           main] o.s.ai.vectorstore.PgVectorStore         : Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-02-28T10:55:40.003+05:30  INFO 16544 --- [velo-index] [           main] o.s.ai.vectorstore.PgVectorStore         : vectorTableValidationsEnabled false
+2026-02-28T10:55:40.005+05:30 DEBUG 16544 --- [velo-index] [           main] o.s.ai.vectorstore.PgVectorStore         : Skipping the schema initialization for the table: public.vector_store
+2026-02-28T10:55:40.055+05:30  INFO 16544 --- [velo-index] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-02-28T10:55:40.253+05:30  INFO 16544 --- [velo-index] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-02-28T10:55:40.260+05:30  INFO 16544 --- [velo-index] [           main] com.veloindex.VeloIndexApplication       : Started VeloIndexApplication in 2.277 seconds (process running for 2.628)
+Seeding dummy data for test video...
+2026-02-28T10:55:40.422+05:30  WARN 16544 --- [velo-index] [           main] o.s.ai.ollama.api.OllamaApi              : [404] Not Found - {"error":"model \"llama3.2\" not found, try pulling it first"}
+2026-02-28T10:55:40.425+05:30  INFO 16544 --- [velo-index] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-28T10:55:40.439+05:30 ERROR 16544 --- [velo-index] [           main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.RuntimeException: [404] Not Found - {"error":"model \"llama3.2\" not found, try pulling it first"}
+	at org.springframework.ai.ollama.api.OllamaApi$OllamaResponseErrorHandler.handleError(OllamaApi.java:248) ~[spring-ai-ollama-1.0.0-M4.jar:1.0.0-M4]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:823) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:812) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:215) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:811) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$body$0(DefaultRestClient.java:742) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:571) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:532) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:677) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:806) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.body(DefaultRestClient.java:742) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.ai.ollama.api.OllamaApi.embed(OllamaApi.java:162) ~[spring-ai-ollama-1.0.0-M4.jar:1.0.0-M4]
+	at org.springframework.ai.ollama.OllamaEmbeddingModel.lambda$call$2(OllamaEmbeddingModel.java:118) ~[spring-ai-ollama-1.0.0-M4.jar:1.0.0-M4]
+	at io.micrometer.observation.Observation.observe(Observation.java:565) ~[micrometer-observation-1.14.1.jar:1.14.1]
+	at org.springframework.ai.ollama.OllamaEmbeddingModel.call(OllamaEmbeddingModel.java:117) ~[spring-ai-ollama-1.0.0-M4.jar:1.0.0-M4]
+	at org.springframework.ai.embedding.EmbeddingModel.embed(EmbeddingModel.java:92) ~[spring-ai-core-1.0.0-M4.jar:1.0.0-M4]
+	at org.springframework.ai.vectorstore.PgVectorStore.doAdd(PgVectorStore.java:198) ~[spring-ai-pgvector-store-1.0.0-M4.jar:1.0.0-M4]
+	at org.springframework.ai.vectorstore.observation.AbstractObservationVectorStore.lambda$add$1(AbstractObservationVectorStore.java:70) ~[spring-ai-core-1.0.0-M4.jar:1.0.0-M4]
+	at io.micrometer.observation.Observation.observe(Observation.java:499) ~[micrometer-observation-1.14.1.jar:1.14.1]
+	at org.springframework.ai.vectorstore.observation.AbstractObservationVectorStore.add(AbstractObservationVectorStore.java:70) ~[spring-ai-core-1.0.0-M4.jar:1.0.0-M4]
+	at com.veloindex.util.DummyDataSeeder.run(DummyDataSeeder.java:33) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:571) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.veloindex.VeloIndexApplication.main(VeloIndexApplication.java:10) ~[classes/:na]
+
+2026-02-28T10:55:40.444+05:30  INFO 16544 --- [velo-index] [           main] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-28T10:55:40.467+05:30  INFO 16544 --- [velo-index] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.569 s
+[INFO] Finished at: 2026-02-28T10:55:41+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.4.0:run (default-cli) on project velo-index: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

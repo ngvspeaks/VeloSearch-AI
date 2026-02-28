@@ -1,0 +1,23 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.veloindex:velo-index >----------------------
+[INFO] Building velo-index 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.0:clean (default-clean) @ velo-index ---
+[INFO] Deleting C:\Users\NIBIN G VARGHESE\.gemini\antigravity\scratch\velo-index\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ velo-index ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ velo-index ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 5 source files with javac [debug parameters release 23] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.571 s
+[INFO] Finished at: 2026-02-28T10:49:51+05:30
+[INFO] ------------------------------------------------------------------------

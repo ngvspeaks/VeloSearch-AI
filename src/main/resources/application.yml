@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: velo-index
+  datasource:
+    url: jdbc:postgresql://localhost:5432/veloindex
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: llama3.2-vision
+      embedding:
+        model: llama3.2
+    vectorstore:
+      pgvector:
+        index-type: HNSW
+        distance-type: COSINE_DISTANCE
+        dimensions: 1024
+        bucket-name: veloindex-vectors
+
+logging:
+  level:
+    org.springframework.ai: DEBUG

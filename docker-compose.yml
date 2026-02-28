@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: ankane/pgvector
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: veloindex
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U user -d veloindex" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
