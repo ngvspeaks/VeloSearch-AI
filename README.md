@@ -4,6 +4,27 @@
 
 ![VeloIndex Demo](https://raw.githubusercontent.com/your-username/velo-index/main/docs/demo.gif) *(Replace with your actual demo GIF)*
 
+## 🏗️ Architecture
+```mermaid
+graph TD
+    subgraph "Indexing Flow"
+        VF[Video File] --> FF[FFmpeg: Frame Extraction]
+        FF --> IS[IndexingService]
+        IS --> OV[Ollama: Llama 3.2 Vision]
+        OV --> OE[Ollama: Embedding Model]
+        OE --> VS[VectorStore: PGVector]
+    end
+
+    subgraph "Search & Seek Flow"
+        UI[Web UI: Search Bar] --> SS[SearchService]
+        SS --> VS
+        VS --> SR[Search Results: Timestamps]
+        SR --> VP[Video Player: HTML5 Seek]
+    end
+
+    VS[(PostgreSQL + PGVector)]
+```
+
 ## 🌟 Key Features
 - **Multimodal AI Analysis**: Uses **Ollama (Llama 3.2 Vision)** to analyze and describe individual video frames.
 - **Semantic Search**: Powered by **Spring AI** and **PGVector (PostgreSQL)** to perform high-dimensional vector searches on video content.
